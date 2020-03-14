@@ -9,3 +9,13 @@ To run the app please download the required libraries:
 pip install requirements.txt
 ``
 
+To start the app please type:
+```
+python src.app
+```
+
+Now you can check your browser at the following url:
+```
+http://localhost:8020/
+```
+
