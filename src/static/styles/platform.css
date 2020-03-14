@@ -1,0 +1,47 @@
+.heading{
+    padding: 27px;
+    font-size: 25px;
+    border-bottom: 0.5px solid black;
+}
+
+.form{
+    padding: 30px;
+    border-bottom: 0.5px solid black;
+}
+.text-box{
+    height: 150px;
+    width: 300px
+}
+
+.input-box{
+    padding-top: 15px;
+}
+
+.question-box {
+    height: 80px;
+    width: 300px
+}
+
+.submit-box{
+   padding-top: 15px;
+}
+.answer{
+    padding: 20px 30px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #505050;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    animation: spin 2s linear infinite
+ }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+

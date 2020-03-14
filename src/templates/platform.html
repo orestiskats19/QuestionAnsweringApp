@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orestis' Question Answering platform </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/platform.css') }}">
+    <script src="/static/platform.js"></script>
+</head>
+<body>
+<div class='heading'> Welcome to Orestis' Question Answering platform</div>
+<form class="form" name="form" method="POST">
+    <div>In the following box enter the text that you would like the machine to learn.
+        <div class="input-box">
+                <textarea name="context" class="text-box" placeholder="Type your text here.."
+                          onKeyup="check_form()"></textarea>
+        </div>
+    </div>
+    <div>Please enter your question here
+        <div class="input-box">
+                <textarea name="question" class="question-box" placeholder="Type your question here.."
+                          onKeyup="check_form()"></textarea>
+        </div>
+    </div>
+    <div class="submit-box">
+        <input style="cursor:pointer" id="submit_button" disabled="disabled" name='submit' type="submit"
+               onclick="loader()">
+    </div>
+</form>
+<div class="answer">
+    <div id="loader" style="display:none">
+        <div class="loader"></div>
+        <div class="input-box"> We are trying hard to find the best answer for you.</div>
+    </div>
+    {% if answer is not none %}
+    <div id="answer-box">
+        <div class="input-box">Context:</div>
+        <div>{{context}}</div>
+        <div class="input-box"> Question:</div>
+        <div>{{question}}</div>
+        <div class="input-box"> Answer:</div>
+        <div>{{answer}}</div>
+        <div class="input-box">
+            Score of the answer:
+            <div>{{score*100}} %</div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>
