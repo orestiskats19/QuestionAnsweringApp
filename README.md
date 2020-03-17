@@ -6,12 +6,12 @@ will provide the answer and the score of the answer within just a few seconds.
 
 To run the app please download the required libraries:
 ``
-pip install requirements.txt
+pip install -r requirements.txt
 ``
 
 To start the app please type:
 ```
-python src.app
+python -m src.app
 ```
 
 Now you can check your browser at the following url:
