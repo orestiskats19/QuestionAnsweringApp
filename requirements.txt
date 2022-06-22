@@ -4,7 +4,7 @@ freeze==1.0.10
 itsdangerous==1.1.0
 Jinja2==2.11.1
 MarkupSafe==1.1.1
-numpy==1.18.1
+numpy==1.22.0
 PyYAML==5.3
 six==1.14.0
 torch==1.0.1
